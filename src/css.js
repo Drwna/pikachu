@@ -1,25 +1,21 @@
-/* reset css */
-* {
+const string = `
+.skin * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-*::before {
+.skin *::before {
   box-sizing: border-box;
 }
 
-*::after {
+.skin *::after {
   box-sizing: border-box;
-}
-
-/* style.css */
-body {
-  background: #FFE600;
-  min-height: 100vh;
 }
 
 .skin {
+  min-height: 50vh;
+  background: #FFE600;
   position: relative;
 }
 
@@ -41,21 +37,21 @@ body {
   }
 
   33% {
-    transform: rotate(5deg);
+    transform: rotate(4deg);
   }
 
   66% {
-    transform: rotate(-5deg);
+    transform: rotate(-4deg);
   }
 
   100% {
-    transform: rotate(15deg);
+    transform: rotate(0deg);
   }
 }
 
 .nose:hover {
   transform-origin: center bottom;
-  animation: wave 400ms infinite linear;
+  animation: wave 150ms infinite linear;
 }
 
 .eye {
@@ -201,3 +197,6 @@ body {
   background: #FF0000;
   border-radius: 50%;
 }
+`
+// 模块化
+export default string
