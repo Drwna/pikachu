@@ -195,4 +195,4 @@ var player = {
 };
 player.init();
 },{"./dynamicCSS.js":"19KX"}]},{},["OSgC"], null)
-//# sourceMappingURL=-d/dynamic.d5272fe5.map
+//# sourceMappingURL=dynamic.d5272fe5.map
