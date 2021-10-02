@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"hUe6":[function(require,module,exports) {
+})({"19KX":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -112,10 +112,10 @@ Object.defineProperty(exports, "__esModule", {
 var string = "\n.skin * {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n.skin *::before {\n  box-sizing: border-box;\n}\n\n.skin *::after {\n  box-sizing: border-box;\n}\n\n.skin {\n  min-height: 50vh;\n  background: #FFE600;\n  position: relative;\n}\n\n.nose {\n  border: 14px solid transparent;\n  width: 10px;\n  border-radius: 10px;\n  border-top-color: black;\n  position: absolute;\n  left: 50%;\n  top: 140px;\n  margin-left: -14px;\n  z-index: 5;\n}\n\n@keyframes wave {\n  0% {\n    transform: rotate(0deg);\n  }\n\n  33% {\n    transform: rotate(4deg);\n  }\n\n  66% {\n    transform: rotate(-4deg);\n  }\n\n  100% {\n    transform: rotate(0deg);\n  }\n}\n\n.nose:hover {\n  transform-origin: center bottom;\n  animation: wave 150ms infinite linear;\n}\n\n.eye {\n  position: absolute;\n  border: 2px solid black;\n  width: 64px;\n  height: 64px;\n  left: 50%;\n  top: 100px;\n  margin-left: -32px;\n  background: #2e2e2e;\n  border-radius: 50%;\n}\n\n.eye::before {\n  content: '';\n  display: block;\n  border: 1px solid #000;\n  width: 30px;\n  height: 30px;\n  background: #fff;\n  border-radius: 50%;\n  position: relative;\n  top: 3px;\n  left: 8px;\n}\n\n.eye.left {\n  transform: translateX(-100px);\n}\n\n.eye.right {\n  transform: translateX(100px);\n}\n\n.mouth {\n  width: 200px;\n  height: 200px;\n  position: absolute;\n  left: 50%;\n  top: 170px;\n  margin-left: -100px;\n}\n\n.mouth .up {\n  position: relative;\n  top: -20px;\n  z-index: 1;\n}\n\n.mouth .up .lip {\n  border: 3px solid black;\n  height: 30px;\n  width: 100px;\n  border-top-color: transparent;\n  background-color: #FFE600;\n  position: absolute;\n  left: 50%;\n  margin-left: -50px;\n}\n\n.mouth .up .lip.left {\n  border-radius: 0 0 0 50px;\n  transform: rotate(-20deg) translateX(-55px);\n}\n\n.mouth .up .lip.right {\n  border-radius: 0 0 50px 0;\n  transform: rotate(20deg) translateX(55px);\n}\n\n\n.mouth .up .lip::before {\n  content: '';\n  display: block;\n  width: 7px;\n  height: 30px;\n  position: absolute;\n  bottom: 0;\n  background: #FFE600;\n}\n\n\n.mouth .up .lip.left::before {\n  right: -6px;\n}\n\n.mouth .up .lip.right::before {\n  left: -6px;\n}\n\n.mouth .down {\n  height: 186px;\n  position: absolute;\n  top: 4px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.mouth .down .yuan1 {\n  border: 3px solid black;\n  width: 150px;\n  height: 1000px;\n  position: absolute;\n  bottom: 0;\n  left: 50%;\n  margin-left: -75px;\n  border-radius: 75px/300px;\n  background-color: #9B000A;\n  overflow: hidden;\n}\n\n.mouth .down .yuan1 .yuan2 {\n  width: 200px;\n  height: 300px;\n  position: absolute;\n  background-color: #FF485F;\n  bottom: -155px;\n  left: 50%;\n  margin-left: -100px;\n  border-radius: 100px;\n}\n\n.face {\n  border: 3px solid black;\n  position: absolute;\n  left: 50%;\n  width: 88px;\n  height: 88px;\n  top: 200px;\n  margin-left: -44px;\n  z-index: 2;\n}\n\n.face.left {\n  transform: translateX(-180px);\n  background: #FF0000;\n  border-radius: 50%;\n}\n\n.face.right {\n  transform: translateX(180px);\n  background: #FF0000;\n  border-radius: 50%;\n}\n";
 // 模块化
 exports.default = string;
-},{}],"7fqj":[function(require,module,exports) {
+},{}],"OSgC":[function(require,module,exports) {
 'use strict';
 
-var _dynamicCSS = require('../demo/dynamicCSS.js');
+var _dynamicCSS = require('./dynamicCSS.js');
 
 var _dynamicCSS2 = _interopRequireDefault(_dynamicCSS);
 
@@ -153,7 +153,7 @@ var player = {
         }
     },
     return: function _return() {
-        location.href = '../index.html';
+        location.href = 'index.html';
     },
     run: function run() {
         player.n += 1;
@@ -194,5 +194,5 @@ var player = {
     }
 };
 player.init();
-},{"../demo/dynamicCSS.js":"hUe6"}]},{},["7fqj"], null)
-//# sourceMappingURL=dynamic.c7bf2ab4.map
+},{"./dynamicCSS.js":"19KX"}]},{},["OSgC"], null)
+//# sourceMappingURL=dynamic.680dbea8.map

@@ -1,4 +1,4 @@
-import string from "../demo/dynamicCSS.js"
+import string from "./dynamicCSS.js"
 
 const player = {
     id: undefined,
@@ -32,7 +32,7 @@ const player = {
         }
     },
     return: () => {
-        location.href = '../index.html'
+        location.href = 'index.html'
     },
     run: () => {
         player.n += 1
