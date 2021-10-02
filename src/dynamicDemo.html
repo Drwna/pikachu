@@ -5,18 +5,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>Demo</title>
 
 </head>
 <body>
-<div id="demo"></div>
-<style id="demo2"></style>
+<div id="codeDemo"></div>
+<style id="demo"></style>
 <div id="buttons">
+    <button id="btnReturn">返回</button>
     <button id="btnPause">暂停</button>
     <button id="btnPlay">播放</button>
     <button id="btnSlow">慢速</button>
     <button id="btnNormal">中速</button>
     <button id="btnFast">快速</button>
+    <button id="btnReplay">重播</button>
 </div>
 <style>
     * {
@@ -43,11 +45,11 @@
         padding: 4px 8px;
     }
 
-    #demo2 {
+    #demo {
         display: none;
     }
 
-    #demo {
+    #codeDemo {
         position: fixed;
         height: 50vh;
         top: 0;
@@ -57,7 +59,7 @@
         overflow-y: auto;
     }
 
-    #demo::-webkit-scrollbar {
+    #codeDemo::-webkit-scrollbar {
         display: none; /* Chrome Safari */
     }
 
@@ -93,6 +95,6 @@
         </div>
     </div>
 </div>
-<script type="module" src="dynamic.js"></script>
+<script src="dynamic.js"></script>
 </body>
 </html>

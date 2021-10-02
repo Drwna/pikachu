@@ -1,16 +1,15 @@
 import string from "./dynamicCSS.js"
-
 const player = {
     id: undefined,
     n: 1,
     time: 100,
     ui: {
-        demo: document.querySelector('#demo'),
-        demo2: document.querySelector('#demo2')
+        codeDemo: document.querySelector('#codeDemo'),
+        demo: document.querySelector('#demo')
     },
     init: () => {
-        player.ui.demo.innerText = string.substring(0, player.n)
-        player.ui.demo2.innerHTML = string.substring(0, player.n)
+        player.ui.codeDemo.innerText = string.substring(0, player.n)
+        player.ui.demo.innerHTML = string.substring(0, player.n)
         player.bindEvents()
         player.play()
     },
@@ -19,7 +18,9 @@ const player = {
         '#btnPlay': 'play',
         '#btnSlow': 'slow',
         '#btnNormal': 'normal',
-        '#btnFast': 'fast'
+        '#btnFast': 'fast',
+        '#btnReplay': 'replay',
+        '#btnReturn': 'return'
     },
     bindEvents: () => {
         for (let key in player.events) {
@@ -29,15 +30,18 @@ const player = {
             }
         }
     },
+    return: () =>{
+        location.href='./index.html'
+    },
     run: () => {
         player.n += 1
         if (player.n > string.length) {
             window.clearInterval(player.id)
             return
         }
-        player.ui.demo.innerText = string.substring(0, player.n)
-        player.ui.demo2.innerHTML = string.substring(0, player.n)
-        player.ui.demo.scrollTop = player.ui.demo.scrollHeight
+        player.ui.codeDemo.innerText = string.substring(0, player.n)
+        player.ui.demo.innerHTML = string.substring(0, player.n)
+        player.ui.codeDemo.scrollTop = player.ui.codeDemo.scrollHeight
     },
     play: () => {
         player.id = setInterval(player.run, player.time)
@@ -59,7 +63,12 @@ const player = {
         player.pause()
         player.time = 0
         player.play()
+    },
+    replay: () => {
+        player.ui.codeDemo.innerText = ''
+        player.ui.demo.innerHTML = ''
+        player.n = 0
+        player.init()
     }
 }
-
 player.init()
