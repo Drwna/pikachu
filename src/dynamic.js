@@ -31,7 +31,7 @@ const player = {
         }
     },
     return: () =>{
-        location.href='./index.html'
+        location.href='index.html'
     },
     run: () => {
         player.n += 1
