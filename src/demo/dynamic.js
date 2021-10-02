@@ -1,4 +1,4 @@
-import string from "../demo/dynamicCSS"
+import string from "../demo/dynamicCSS.js"
 
 const player = {
     id: undefined,

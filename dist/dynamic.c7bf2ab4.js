@@ -115,7 +115,7 @@ exports.default = string;
 },{}],"7fqj":[function(require,module,exports) {
 'use strict';
 
-var _dynamicCSS = require('../demo/dynamicCSS');
+var _dynamicCSS = require('../demo/dynamicCSS.js');
 
 var _dynamicCSS2 = _interopRequireDefault(_dynamicCSS);
 
@@ -194,5 +194,5 @@ var player = {
     }
 };
 player.init();
-},{"../demo/dynamicCSS":"hUe6"}]},{},["7fqj"], null)
-//# sourceMappingURL=dynamic.34e49e94.map
+},{"../demo/dynamicCSS.js":"hUe6"}]},{},["7fqj"], null)
+//# sourceMappingURL=dynamic.c7bf2ab4.map
